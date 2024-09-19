@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "roboto", sans-serif;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("fonts/roboto-black-webfont.woff2") format("woff2"),
+      url("fonts/roboto-black-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "roboto";
+    src: url("fonts/roboto-bold-webfont.woff2") format("woff2"),
+      url("fonts/roboto-bold-webfont.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "roboto";
+    src: url("fonts/roboto-bolditalic-webfont.woff2") format("woff2"),
+      url("fonts/roboto-bolditalic-webfont.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "roboto";
+    src: url("fonts/roboto-italic-webfont.woff2") format("woff2"),
+      url("fonts/roboto-italic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+  }
+
+body, html{
+    margin:0;
+    height:100%;
+    font-size: 10px;
+}
+
+.page-wrapper{
+    height:100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1.3fr 5fr;
+}
+
+aside{
+    grid-column: 1/2;
+    grid-row: 1/6;
+
+    color:white;
+    background-color: rgb(80, 148, 251);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 500px;
+}
+
+aside > div > h2{
+    font-size: 3rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+div.dashboard-text{
+    display: flex;
+}
+
+svg{
+    fill:white;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+} 
+
+nav{
+    display: grid;
+    font-size: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 200px;
+    gap:30px;
+
+} 
+
+ul li{
+    margin-bottom: 1rem;
+}
+
+header{
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    border-style: solid;
+
+    display: grid;
+    grid-template-rows: 1fr 1 fr;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 100px;
+    background-color: blanchedalmond;
+}
+
+div.top-half-wrapper{
+    grid-row: 1/2;
+
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    padding-top:2rem;
+    width:100%;
+}
+
+input{
+    width: 50rem;
+    height: 3rem;
+    background-color: rgb(230, 245, 251);
+    border-radius: 15px;
+    border-style: none;
+
+}
+div.search-bar{
+    grid-row:1/2;
+    display: flex;
+}
+
+div.icon-wrapper{
+    grid-row: 3/4;
+}
+
+div.bottom-half-wrapper{
+    grid-row:2/3;
+
+    width:100%;
+    display: grid;
+    grid-template-columns: .8fr 6fr 3fr;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+img{
+    height:9rem;
+    width:10rem;
+    border-radius: 6rem;
+}
+
+div.button-wrapper{
+    grid-column: 3/4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+button{
+    width: 10rem;
+    height: 4rem;
+    border-radius: 2rem;
+    border-style: none;
+    background-color: rgb(54, 137, 245);
+    color: white;
+    padding:1rem;
+
+}
+
+p.username{
+    font-size: 2.4rem;
+}
+
+section{
+    grid-row: 2/6;
+    grid-column: 2/3;
+
+    background-color: rgb(224, 237, 237);
+    border-style: solid;
+    border-color: brown;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects-wrapper{
+    grid-row: 1/3;
+    grid-column: 1/2;
+    padding: 2rem;
+}
+
+div.projects-wrapper > h2{
+    margin-bottom: 1.2rem;
+}
+.card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+}
+
+div.card{
+    border-style:solid;
+    border-color: rgb(0, 0, 0);
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    padding:1rem;
+    box-shadow: -5px 0 0 rgb(255, 196, 0);
+    border-radius: 1rem;
+}
+
+h2{
+    font-size: 1.8rem;
+}
+h3{
+    font-size: 1.4rem;
+}
+
+div.card p{
+    color: rgb(133, 129, 129);
+}
+em{
+    font-weight: bold;
+    font-style: italic;
+}
+
+ul li{
+    list-style-type: none;
+}
